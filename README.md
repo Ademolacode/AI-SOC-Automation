@@ -47,7 +47,7 @@ Modern Security Operations Centers are often overwhelmed by "alert fatigue." Thi
 
 **1. Splunk Detection**
 ![Splunk Detection](screenshots/splunk-detection.png)
-*Custom correlation search detecting suspicious PowerShell execution.*
+*Custom Splunk correlation search detecting failed Windows logon attempts (Event ID 4625).*
 
 **2. N8N Workflow**
 ![N8N Workflow](screenshots/n8n-workflow.png)
