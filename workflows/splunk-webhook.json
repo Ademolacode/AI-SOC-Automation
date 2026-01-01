@@ -1,0 +1,13 @@
+{
+  "name": "Splunk Alert Webhook",
+  "nodes": [
+    {
+      "name": "Incoming Alert",
+      "type": "n8n-nodes-base.webhook",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "<REDACTED>"
+      }
+    }
+  ]
+}
