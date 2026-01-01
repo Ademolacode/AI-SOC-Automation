@@ -1,0 +1,13 @@
+{
+  "name": "DFIR-IRIS Case Creation",
+  "nodes": [
+    {
+      "name": "Create Case",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "<REDACTED>",
+        "method": "POST"
+      }
+    }
+  ]
+}
