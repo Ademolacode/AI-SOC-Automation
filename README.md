@@ -54,7 +54,7 @@ Modern Security Operations Centers are often overwhelmed by "alert fatigue." Thi
 *N8N workflow node configured to send a system prompt to an OpenAI model. It shows how alert data is passed into the AI model as structured input, forming the basis for automated analysis and triage.*
 
 **3. VirusTotal Enrichment**
-![VirusTotal Enrichment](screenshots/virustotal.png)
+![VirusTotal Enrichment](screenshots/Virustotal.png)
 *N8N HTTP Request node configured to query the VirusTotal API using predefined credentials. It demonstrates automated threat intelligence enrichment by retrieving reputation data for hashes or indicators associated with the alert*
 
 **4. AI-Generated Triage Output**
