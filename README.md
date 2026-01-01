@@ -25,7 +25,7 @@ Modern Security Operations Centers are often overwhelmed by "alert fatigue." Thi
 | **Telemetry**       | Sysmon                | Windows endpoint monitoring & process logging    |
 | **Orchestration**   | N8N                   | Workflow automation engine (Self-hosted)         |
 | **AI Analysis**     | OpenAI GPT-4 mini     | Structured triage generation & technique mapping |
-| **Threat Intel**    | VirusTotal, AbuseIPDB | File/IP reputation and risk scoring              |
+| **Threat Intel**    | VirusTotal, AbuseIPDB | File Hash/IP reputation and risk scoring         |
 | **Case Management** | DFIR-Iris             | Investigation lifecycle and evidence tracking    |
 | **Notification**    | Slack Webhooks        | Real-time analyst alerting                       |
 | **Testing**         | Atomic Red Team       | Adversary emulation (T1059.001, T1027, etc.)     |
