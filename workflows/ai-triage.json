@@ -1,0 +1,13 @@
+{
+  "name": "AI-Assisted Triage",
+  "nodes": [
+    {
+      "name": "AI Model",
+      "type": "n8n-nodes-base.openAi",
+      "parameters": {
+        "model": "gpt-4-mini",
+        "prompt": "<REDACTED_PROMPT>"
+      }
+    }
+  ]
+}
