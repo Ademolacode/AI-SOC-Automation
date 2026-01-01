@@ -1,0 +1,13 @@
+{
+  "name": "VirusTotal Enrichment",
+  "nodes": [
+    {
+      "name": "VT Lookup",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "https://www.virustotal.com/api/v3/files/{{ $json.hash }}",
+        "authentication": "predefinedCredentialType"
+      }
+    }
+  ]
+}
