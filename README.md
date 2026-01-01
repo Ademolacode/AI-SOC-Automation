@@ -47,27 +47,27 @@ Modern Security Operations Centers are often overwhelmed by "alert fatigue." Thi
 
 **1. Splunk Detection**
 ![Splunk Detection](screenshots/splunk-detection.png)
-*Custom Splunk correlation search detecting failed Windows logon attempts (Event ID 4625).*
+*Splunk search querying the mydfir-project index for Windows EventCode 4625. The results are aggregated by time, computer name, user, and source IP, clearly highlighting repeated failed authentication attempts from the same source, which is indicative of brute force activity.*
 
-**2. N8N Workflow**
+**2. N8N AI Model**
 ![N8N Workflow](screenshots/n8n-workflow.png)
-*End-to-end orchestration from alert ingestion to case creation.*
+*N8N workflow node configured to send a system prompt to an OpenAI model. It shows how alert data is passed into the AI model as structured input, forming the basis for automated analysis and triage.*
 
 **3. VirusTotal Enrichment**
-![VirusTotal Enrichment](screenshots/virustotal-enrichment.png)
-*File/IP reputation integrated into AI triage workflow.*
+![VirusTotal Enrichment](screenshots/virustotal.png)
+*N8N HTTP Request node configured to query the VirusTotal API using predefined credentials. It demonstrates automated threat intelligence enrichment by retrieving reputation data for hashes or indicators associated with the alert*
 
-**4. AI-Assisted Triage**
-![AI Analysis](screenshots/ai-analysis.png)
-*Structured AI-generated triage report with MITRE ATT&CK mapping.*
+**4. AI-Generated Triage Output**
+![GPT-mini-model](screenshots/GPT-mini-model.png)
+*This screenshot captures the structured AI output containing severity assessment, MITRE ATT&CK technique mapping, and recommended response actions. It reflects automated decision support designed to reduce analyst triage time.*
 
 **5. DFIR-Iris Case Management**
 ![DFIR-Iris Case](screenshots/dfir-iris-case.png)
-*Automatically created investigation case with full context.*
+*This screenshot shows an N8N HTTP Request node sending alert details and AI-generated context to DFIR-IRIS. It illustrates automated case creation with fields such as alert title and detailed description populated dynamically from upstream analysis.*
 
 **6. Slack Notification**
 ![Slack Alert](screenshots/slack-notification.png)
-*Real-time analyst notification with triage summary and direct case link.*
+*Slack channel receiving a detailed security alert message. The notification includes severity, MITRE ATT&CK techniques, and response guidance, enabling analysts to quickly understand and act on the incident.*
 
 ---
 
