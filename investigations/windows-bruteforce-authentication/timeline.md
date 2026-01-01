@@ -1,11 +1,10 @@
 ## Investigation Timeline (UTC)
 
-| Time | Event | Description |
-|----|----|----|
-| 10:12:01 | Detection | First failed login attempt observed |
-| 10:12:34 | Repetition | Multiple EventCode 4625 failures from same IP |
-| 10:13:10 | Threshold | Alert threshold exceeded |
-| 10:14:02 | Enrichment | VirusTotal and AbuseIPDB queried |
-| 10:14:30 | AI Triage | Structured triage report generated |
-| 10:15:05 | Case Creation | DFIR-IRIS case automatically created |
-| 10:15:20 | Notification | Slack alert delivered to SOC channel |
+| Time (UTC) | Stage | What Happened |
+|---|---|---|
+| 26/12/2025 16:40:01 | Detection / Case Intake | DFIR-IRIS triage record created for brute force alert involving host "mydfir" and user "mydfir" |
+| 26/12/2025 16:40–16:41 | SIEM Evidence | Splunk detection shows repeated EventCode 4625 failures from the same source IP |
+| 26/12/2025 16:41–16:42 | Enrichment | AbuseIPDB enrichment confirms high confidence malicious reputation for the source IP |
+| 26/12/2025 16:41–16:42 | Enrichment | VirusTotal enrichment flags the file hash as malicious and associated with trojan/RAT behavior |
+| 26/12/2025 16:42–16:43 | Assessment | MITRE techniques mapped and severity rated as Critical based on brute force plus confirmed malware |
+| 26/12/2025 16:43–16:45 | Response Guidance | Containment and investigation actions documented (block IP, isolate host, scan, hunt for persistence) |
