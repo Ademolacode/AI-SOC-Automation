@@ -1,10 +1,11 @@
-Summary:
+# Investigation Report: Windows Brute Force Authentication Attempt
+## Summary:
 - Alert Type: Brute Force Alert
 - Details: Multiple failed login attempts detected on host "mydfir" for user "mydfir".
 - Source IP: 69.74.29.21
 - File involved: Executable with hash "bcff246f0739ed98f8aa615d256e7e00bc1cb24c8cabaea609b25c3f050c7805"
 
-IOC Enrichment:
+## IOC Enrichment:
 1. IP Enrichment (69.74.29.21):
 - Location: United States (US)
 - ISP: Cablevision Systems Corp.
@@ -21,7 +22,7 @@ IOC Enrichment:
 - Related suspicious activities include remote connection attempts (Silenttrinity C2), startup persistence attempts, and suspicious msbuild execution.
 - File is digitally signed, but several engines detect it as malicious or trojan.
 
-Severity Assessment:
+## Severity Assessment:
 - MITRE ATT&CK Tactics/Techniques:
 - Initial Access (T1110: Brute Force)
 - Execution (T1059.003: Windows Command Shell Suspicious Execution)
@@ -30,7 +31,7 @@ Severity Assessment:
 - Severity Rating: Critical
 - Due to confirmed brute force activity from a highly reported malicious IP combined with the presence of a confirmed Trojan malware executable detected in the environment.
 
-Recommended Actions:
+## Recommended Actions:
 1. Immediate containment:
 - Block the source IP address (69.74.29.21) on firewall and network perimeter devices.
 - Isolate affected host "mydfir" from the network.
