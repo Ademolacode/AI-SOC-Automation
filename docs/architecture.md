@@ -6,7 +6,7 @@ This document describes the end-to-end SOC automation architecture implemented i
 
 
 
-![AI-SOC Architecture](diagrams/ai-soc-architecture.png)
+![AI-SOC Architecture](diagram/ai-soc-architecture.png)
 
 ## End-to-End Flow
 
