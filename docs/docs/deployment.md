@@ -17,7 +17,7 @@ This project is designed to run in a local lab or test environment.
 ## Deployment Steps
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/ai-soc-automation.git
+   git clone https://github.com/yourusername/AI-SOC-Automation.git
 
 2. Configure environment variables:
    cp .env.example .env
