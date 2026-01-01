@@ -1,0 +1,3 @@
+index=mydfir-project EventCode=4625
+| stats count by _time, ComputerName, user, src_ip
+| where count > 5
