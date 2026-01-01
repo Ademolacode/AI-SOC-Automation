@@ -114,14 +114,35 @@ I designed and implemented this system from the ground up, focusing on the follo
 ## 📁 Repository Structure
 
 ```text
-ai-soc-automation-pipeline/
-├── workflows/         # N8N automation (JSON exports)
-├── detections/        # Splunk correlation searches (.spl)
-├── scripts/           # Python validators & rate limiters
-├── investigations/    # Example case exports from DFIR-Iris
-├── docs/              # Deployment & troubleshooting guides
-├── screenshots/       # Visual walkthroughs
-└── docker-compose.yml # Full lab environment orchestration
+ai-soc-automation/
+├── README.md
+├── docker-compose.yml
+├── .env.example
+├── detections/
+│   └── windows-authentication/
+│       ├── brute-force-4625.spl
+│       └── README.md
+├── workflows/
+│   ├── splunk-webhook.json
+│   ├── ai-triage.json
+│   ├── virustotal-enrichment.json
+│   └── dfir-iris-case-create.json
+├── scripts/
+│   ├── json_validator.py
+│   ├── rate_limiter.py
+│   └── utils.py
+├── investigations/
+│   └── windows-bruteforce-authentication/
+│       ├── README.md
+│       ├── timeline.md
+│       ├── iocs.md
+│       └── splunk-queries.md
+├── screenshots/
+│   └── *.png
+└── docs/
+    ├── architecture.md
+    ├── deployment.md
+    └── troubleshooting.md
 ```
 
 ---
